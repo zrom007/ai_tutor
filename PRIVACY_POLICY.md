@@ -146,7 +146,7 @@ We will update this policy when the app's data practices change. The "Last updat
 ## 8. Contact
 
 Questions about this Privacy Policy:  
-📧 [your-email@example.com] ← заменить перед публикацией
+📧 zrp1974@gmail.com 
 
 ---
 
