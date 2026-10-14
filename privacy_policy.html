@@ -45,7 +45,7 @@
 
 <header class="doc">
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: <b>September 28, 2026</b> (replaces the version of May 8, 2026). This Policy is prepared in accordance with the EU General Data Protection Regulation (GDPR, Regulation 2016/679).</p>
+  <p class="meta">Last updated: <b>October 15, 2026</b> (replaces the version of September 28, 2026). This Policy is prepared in accordance with the EU General Data Protection Regulation (GDPR, Regulation 2016/679).</p>
 </header>
 
 <p class="lead">Jai Tutor is an offline-first language learning app for Android and iOS. This Policy explains what personal data the app processes, for what purposes, on what legal basis, and how you can exercise your rights.</p>
@@ -58,7 +58,7 @@
 <ul>
   <li>The learning modes (Study, Guided, Free Mode, Role Play, Missions, Flashcards) work offline. Your progress and settings stay on your device.</li>
   <li>Your voice is processed on your device by an offline speech-recognition model. Audio is not recorded, stored or sent to any server.</li>
-  <li>Data leaves your device only for: the optional online <b>AI Conversation Partner</b>, verification of your subscription, and downloading content updates.</li>
+  <li>Data leaves your device only for: the optional online <b>AI Conversation Partner</b>, verification of your subscription, downloading content updates, and the <b>partner programme</b> — the last one only if you installed the app via a partner link or entered a partner code.</li>
   <li>We do not sell personal data and do not show advertising.</li>
 </ul>
 
@@ -111,18 +111,38 @@
       <td>Legitimate interest (Art. 6(1)(f)): keeping content up to date</td>
       <td>We do not store it</td>
     </tr>
+    <tr>
+      <td>Partner programme — partner link (Android only): the click label that Google Play passes to the app on first launch if you installed it via a partner link</td>
+      <td>Attributing your first purchase to the partner who referred you</td>
+      <td>Legitimate interest (Art. 6(1)(f)): correct partner reward accounting</td>
+      <td>Kept on your device; sent to our partner-programme server only together with a new purchase (see the next row)</td>
+    </tr>
+    <tr>
+      <td>Partner programme — partner code: the code you enter in the app, platform; on entering the code, the technical IP address of the request (used only to limit the number of checks, not stored)</td>
+      <td>Checking that the code exists; protection against code guessing</td>
+      <td>Performance of a contract (Art. 6(1)(b)): applying the code discount you requested; legitimate interest in preventing abuse (Art. 6(1)(f))</td>
+      <td>The code is kept on your device. The IP address is not stored</td>
+    </tr>
+    <tr>
+      <td>Partner programme — purchase report: when you make a new purchase after installing via a partner link or entering a partner code, the app sends the purchase token, product, platform, the click label and/or the partner code, and a random app-installation identifier (UUID) created when you enter a code</td>
+      <td>Verifying the purchase with Google Play and accruing the reward to the partner; protection against abuse</td>
+      <td>Legitimate interest (Art. 6(1)(f)): correct reward accounting and abuse protection</td>
+      <td>On our partner-programme server (Hostinger, Germany, EU): up to 24 months, then deleted or anonymised; purchase facts needed for accounting are kept as required by law (see the <a href="https://jaitutor.app/privacy.html">partner programme privacy policy</a>)</td>
+    </tr>
   </tbody>
 </table>
 </div>
 <p>Payments are processed by Google Play or the App Store. We never receive your payment card details.</p>
+<p>If you did not install the app via a partner link and did not enter a partner code, no data is sent to the partner-programme server.</p>
 <div class="note">App versions up to and including 1.0.2: if the offline speech model has not been downloaded, voice input may use the speech-recognition service built into your device's operating system (Google or Apple). In that case audio is processed by that provider under its own privacy policy. From the next version, voice input works only with the offline model.</div>
 
 <h2><span class="n">4.</span>Who receives the data</h2>
 <p>We engage the following processors, each only to the extent required for its function:</p>
 <ul>
   <li><b>Cloudflare</b> — our server (Workers), short-term storage of counters and statistics, and content delivery (R2).</li>
+  <li><b>Hostinger</b> — hosting of our partner-programme server and its data; servers located in Germany (EU).</li>
   <li><b>OpenAI</b> — generating AI Conversation Partner replies. According to OpenAI, data sent through its API is not used to train its models and may be retained for a limited period for abuse monitoring.</li>
-  <li><b>Google</b> and <b>Apple</b> — processing payments and verifying subscriptions.</li>
+  <li><b>Google</b> and <b>Apple</b> — processing payments and verifying subscriptions; Google also provides the partner-link click label via Google Play.</li>
 </ul>
 <p>We do not sell personal data and do not share it with third parties for their own marketing.</p>
 
@@ -130,10 +150,10 @@
 <p>Some processors (in particular Cloudflare, OpenAI, Google and Apple) may process data outside the EU/EEA, including in the United States. Any such transfer relies on a European Commission adequacy decision (including the EU–US Data Privacy Framework) or on Standard Contractual Clauses (SCC) ensuring an adequate level of protection.</p>
 
 <h2><span class="n">6.</span>Advertising and tracking</h2>
-<p>The app shows no advertising and does not track you across other apps or websites.</p>
+<p>The app shows no advertising and does not track you across other apps or websites. The partner-link click label and the installation identifier are used only to attribute purchases within our own partner programme.</p>
 
 <h2><span class="n">7.</span>How we protect the data</h2>
-<p>All data between the app and our server is transmitted over encrypted connections (HTTPS). We keep server-side data to a minimum and delete it automatically after the periods stated above.</p>
+<p>All data between the app and our servers is transmitted over encrypted connections (HTTPS). Purchase reports to the partner-programme server are signed, and every purchase is verified with Google Play before any reward is accrued. We keep server-side data to a minimum and delete it automatically after the periods stated above.</p>
 
 <h2><span class="n">8.</span>Children</h2>
 <p>The AI Conversation Partner is not intended for children under 13. We do not knowingly process personal data of children under 13 on our server. If you believe a child has used the AI Conversation Partner, contact us and we will delete the related data.</p>
@@ -148,7 +168,7 @@
   <li>receive your data in a portable format;</li>
   <li>lodge a complaint with a supervisory authority.</li>
 </ul>
-<p>Data stored on your device is under your control: you can delete it at any time by clearing app data or uninstalling the app. Server-side data is deleted automatically (after about 25 hours, 12 hours or 90 days, see section 3); you can also request earlier deletion by email.</p>
+<p>Data stored on your device is under your control: you can delete it at any time by clearing app data or uninstalling the app. Server-side data is deleted automatically (after about 25 hours, 12 hours, 90 days or 24 months, see section 3); you can also request earlier deletion by email.</p>
 <div class="note">The supervisory authority in Lithuania is the State Data Protection Inspectorate (Valstybinė duomenų apsaugos inspekcija, VDAI), Vilnius. Before contacting the authority, you may write to us — we will try to resolve the matter directly.</div>
 
 <h2><span class="n">10.</span>Changes to this Policy</h2>
@@ -158,7 +178,7 @@
 <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:jaitutor.app@gmail.com">jaitutor.app@gmail.com</a>.</p>
 
 <footer class="doc">
-  Jai Tutor · Privacy Policy · last updated September 28, 2026.
+  Jai Tutor · Privacy Policy · last updated October 15, 2026.
 </footer>
 
 </div>
