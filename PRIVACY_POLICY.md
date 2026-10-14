@@ -1,153 +1,186 @@
-# Privacy Policy — Offline AI Language Tutor
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — Jai Tutor</title>
+<link rel="canonical" href="https://zrom007.github.io/ai_tutor/privacy_policy.html">
+<style>
+  :root{
+    --ink:#1c2530; --muted:#5b6674; --line:#e2e6ec; --bg:#ffffff;
+    --accent:#2f6f4f; --soft:#f5f7f9;
+    --measure:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:400 17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:var(--measure); margin:0 auto; padding:2.4rem 1.25rem 4rem}
+  header.doc{border-bottom:2px solid var(--ink); padding-bottom:1.1rem; margin-bottom:1.6rem}
+  h1{font-size:1.7rem; line-height:1.25; margin:0 0 .5rem}
+  .meta{color:var(--muted); font-size:.9rem; margin:0}
+  .meta b{color:var(--ink)}
+  h2{font-size:1.12rem; margin:2.1rem 0 .55rem; padding-top:.3rem}
+  h2 .n{color:var(--accent); font-variant-numeric:tabular-nums; margin-right:.5rem}
+  p{margin:.55rem 0}
+  ul{margin:.4rem 0 .6rem 1.1rem; padding:0}
+  li{margin:.28rem 0}
+  .lead{color:var(--muted)}
+  table{border-collapse:collapse; width:100%; margin:.8rem 0; font-size:.94rem}
+  th,td{border:1px solid var(--line); padding:.5rem .6rem; text-align:left; vertical-align:top}
+  th{background:var(--soft); font-weight:600}
+  .note{background:var(--soft); border-left:3px solid var(--accent); padding:.7rem .9rem; margin:.9rem 0; font-size:.96rem}
+  footer.doc{margin-top:2.6rem; padding-top:1.1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem}
+  a{color:var(--accent)}
+  code{background:var(--soft); padding:0 .25em; border-radius:4px; font-size:.9em}
+  .tbl{overflow-x:auto}
+  @media (max-width:480px){ body{font-size:16px} h1{font-size:1.4rem} .wrap{padding:1.6rem 1rem 3rem} }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-**Last updated:** 2026-03-16  
-**Version:** 1.0 (v0.1 release)  
-**Contact:** [your-email@example.com] ← заменить перед публикацией
+<header class="doc">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: <b>October 15, 2026</b> (replaces the version of September 28, 2026). This Policy is prepared in accordance with the EU General Data Protection Regulation (GDPR, Regulation 2016/679).</p>
+</header>
 
----
+<p class="lead">Jai Tutor is an offline-first language learning app for Android and iOS. This Policy explains what personal data the app processes, for what purposes, on what legal basis, and how you can exercise your rights.</p>
 
-## TL;DR (plain language summary)
+<h2><span class="n">1.</span>Who processes the data (controller)</h2>
+<p>Data controller: <b>Roman Zatolokin</b>, a natural person carrying out individual activity (individuali veikla) in the Republic of Lithuania; Individual Activity Certificate (Pažyma) No. 1215311. Address: Bukčių g. 4-49, LT-04127 Vilnius, Lithuania.</p>
+<p>Contact: <a href="mailto:jaitutor.app@gmail.com">jaitutor.app@gmail.com</a>.</p>
 
-- We do **not** collect your name, email, or any account information.
-- We do **not** run any servers that process your data.
-- Your voice is processed **on your device** when possible. See STT section below.
-- Your learning progress is stored **only on your device**.
-- We use **crash reporting** (Firebase Crashlytics) — anonymous, no voice data.
+<h2><span class="n">2.</span>Summary</h2>
+<ul>
+  <li>The learning modes (Study, Guided, Free Mode, Role Play, Missions, Flashcards) work offline. Your progress and settings stay on your device.</li>
+  <li>Your voice is processed on your device by an offline speech-recognition model. Audio is not recorded, stored or sent to any server.</li>
+  <li>Data leaves your device only for: the optional online <b>AI Conversation Partner</b>, verification of your subscription, downloading content updates, and the <b>partner programme</b> — the last one only if you installed the app via a partner link or entered a partner code.</li>
+  <li>We do not sell personal data and do not show advertising.</li>
+</ul>
 
----
+<h2><span class="n">3.</span>What data we process and why</h2>
+<div class="tbl">
+<table>
+  <thead>
+    <tr><th>Data</th><th>Purpose</th><th>Legal basis</th><th>Where / retention</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Learning progress, level, language pair, settings, flashcard history</td>
+      <td>Running the learning features</td>
+      <td>Performance of a contract (Art. 6(1)(b) GDPR)</td>
+      <td>Only on your device. Deleted when you clear app data or uninstall the app</td>
+    </tr>
+    <tr>
+      <td>Voice (microphone)</td>
+      <td>Speech recognition in exercises</td>
+      <td>Performance of a contract (Art. 6(1)(b))</td>
+      <td>Processed only on your device by the offline model; not recorded, stored or transmitted</td>
+    </tr>
+    <tr>
+      <td>AI Conversation Partner: text of your messages (up to the last 10 messages, each up to 2,000 characters), selected language, level and topic</td>
+      <td>Generating the partner's replies and feedback</td>
+      <td>Performance of a contract (Art. 6(1)(b))</td>
+      <td>Sent to our server and forwarded to OpenAI for processing. <b>Not stored on our server.</b> OpenAI processes it under its API data terms (see section 4)</td>
+    </tr>
+    <tr>
+      <td>App-instance identifier (<code>device_id</code>) and daily message counter</td>
+      <td>Applying daily message limits, protection against abuse</td>
+      <td>Performance of a contract (Art. 6(1)(b)); legitimate interest in preventing abuse (Art. 6(1)(f))</td>
+      <td>Counter: about 25 hours, then deleted automatically</td>
+    </tr>
+    <tr>
+      <td>Purchase data: purchase token, product, platform</td>
+      <td>Verifying that your subscription is active</td>
+      <td>Performance of a contract (Art. 6(1)(b))</td>
+      <td>Verified with Google Play or Apple; the resulting status is cached for 12 hours</td>
+    </tr>
+    <tr>
+      <td>AI Conversation Partner session statistics (Premium only): language, level, topic, score, number of messages</td>
+      <td>Keeping your AI Conversation Partner learning statistics</td>
+      <td>Performance of a contract (Art. 6(1)(b))</td>
+      <td>90 days, then deleted automatically</td>
+    </tr>
+    <tr>
+      <td>Content-update request (current content version); technical connection data such as the IP address, processed by the delivery network</td>
+      <td>Delivering lesson content updates</td>
+      <td>Legitimate interest (Art. 6(1)(f)): keeping content up to date</td>
+      <td>We do not store it</td>
+    </tr>
+    <tr>
+      <td>Partner programme — partner link (Android only): the click label that Google Play passes to the app on first launch if you installed it via a partner link</td>
+      <td>Attributing your first purchase to the partner who referred you</td>
+      <td>Legitimate interest (Art. 6(1)(f)): correct partner reward accounting</td>
+      <td>Kept on your device; sent to our partner-programme server only together with a new purchase (see the next row)</td>
+    </tr>
+    <tr>
+      <td>Partner programme — partner code: the code you enter in the app, platform; on entering the code, the technical IP address of the request (used only to limit the number of checks, not stored)</td>
+      <td>Checking that the code exists; protection against code guessing</td>
+      <td>Performance of a contract (Art. 6(1)(b)): applying the code discount you requested; legitimate interest in preventing abuse (Art. 6(1)(f))</td>
+      <td>The code is kept on your device. The IP address is not stored</td>
+    </tr>
+    <tr>
+      <td>Partner programme — purchase report: when you make a new purchase after installing via a partner link or entering a partner code, the app sends the purchase token, product, platform, the click label and/or the partner code, and a random app-installation identifier (UUID) created when you enter a code</td>
+      <td>Verifying the purchase with Google Play and accruing the reward to the partner; protection against abuse</td>
+      <td>Legitimate interest (Art. 6(1)(f)): correct reward accounting and abuse protection</td>
+      <td>On our partner-programme server (Hostinger, Germany, EU): up to 24 months, then deleted or anonymised; purchase facts needed for accounting are kept as required by law (see the <a href="https://jaitutor.app/privacy.html">partner programme privacy policy</a>)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>Payments are processed by Google Play or the App Store. We never receive your payment card details.</p>
+<p>If you did not install the app via a partner link and did not enter a partner code, no data is sent to the partner-programme server.</p>
+<div class="note">App versions up to and including 1.0.2: if the offline speech model has not been downloaded, voice input may use the speech-recognition service built into your device's operating system (Google or Apple). In that case audio is processed by that provider under its own privacy policy. From the next version, voice input works only with the offline model.</div>
 
-## 1. What data we collect and why
+<h2><span class="n">4.</span>Who receives the data</h2>
+<p>We engage the following processors, each only to the extent required for its function:</p>
+<ul>
+  <li><b>Cloudflare</b> — our server (Workers), short-term storage of counters and statistics, and content delivery (R2).</li>
+  <li><b>Hostinger</b> — hosting of our partner-programme server and its data; servers located in Germany (EU).</li>
+  <li><b>OpenAI</b> — generating AI Conversation Partner replies. According to OpenAI, data sent through its API is not used to train its models and may be retained for a limited period for abuse monitoring.</li>
+  <li><b>Google</b> and <b>Apple</b> — processing payments and verifying subscriptions; Google also provides the partner-link click label via Google Play.</li>
+</ul>
+<p>We do not sell personal data and do not share it with third parties for their own marketing.</p>
 
-### 1.1 Voice / Speech data (STT)
+<h2><span class="n">5.</span>Transfers outside the EU/EEA</h2>
+<p>Some processors (in particular Cloudflare, OpenAI, Google and Apple) may process data outside the EU/EEA, including in the United States. Any such transfer relies on a European Commission adequacy decision (including the EU–US Data Privacy Framework) or on Standard Contractual Clauses (SCC) ensuring an adequate level of protection.</p>
 
-This app uses your device's **operating system speech recognition API** (Android SpeechRecognizer) to convert your spoken words into text.
+<h2><span class="n">6.</span>Advertising and tracking</h2>
+<p>The app shows no advertising and does not track you across other apps or websites. The partner-link click label and the installation identifier are used only to attribute purchases within our own partner programme.</p>
 
-**Important disclosure:**  
-We use `preferOffline = true`, which instructs Android to use a locally installed speech model when available. However:
+<h2><span class="n">7.</span>How we protect the data</h2>
+<p>All data between the app and our servers is transmitted over encrypted connections (HTTPS). Purchase reports to the partner-programme server are signed, and every purchase is verified with Google Play before any reward is accrued. We keep server-side data to a minimum and delete it automatically after the periods stated above.</p>
 
-- If a local speech model is **not installed** on your device, Android may route the audio to **Google's cloud servers** for processing.
-- We have **no control** over whether Android uses local or cloud processing in any given session.
-- We do **not** receive, store, or have access to your voice recordings at any point.
+<h2><span class="n">8.</span>Children</h2>
+<p>The AI Conversation Partner is not intended for children under 13. We do not knowingly process personal data of children under 13 on our server. If you believe a child has used the AI Conversation Partner, contact us and we will delete the related data.</p>
 
-**What this means for you:**
-- Most modern Android devices (Android 10+) have a local speech model pre-installed.
-- If you want to guarantee no audio leaves your device, you can verify your device has an offline speech model installed in: *Settings → General management → Language → Text-to-speech* (exact path varies by manufacturer).
-- Audio processed by Google is subject to [Google's Privacy Policy](https://policies.google.com/privacy).
+<h2><span class="n">9.</span>Your rights</h2>
+<p>In respect of your personal data you have the right to:</p>
+<ul>
+  <li>access your data and obtain a copy;</li>
+  <li>have inaccurate data corrected;</li>
+  <li>request erasure;</li>
+  <li>restrict processing or object to processing based on legitimate interest;</li>
+  <li>receive your data in a portable format;</li>
+  <li>lodge a complaint with a supervisory authority.</li>
+</ul>
+<p>Data stored on your device is under your control: you can delete it at any time by clearing app data or uninstalling the app. Server-side data is deleted automatically (after about 25 hours, 12 hours, 90 days or 24 months, see section 3); you can also request earlier deletion by email.</p>
+<div class="note">The supervisory authority in Lithuania is the State Data Protection Inspectorate (Valstybinė duomenų apsaugos inspekcija, VDAI), Vilnius. Before contacting the authority, you may write to us — we will try to resolve the matter directly.</div>
 
-**We never store voice recordings.** The only output we use is the transcribed text string, processed entirely within the app.
+<h2><span class="n">10.</span>Changes to this Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes are reflected by updating the "Last updated" date at the top of this page.</p>
 
-### 1.2 Learning progress data
+<h2><span class="n">11.</span>Contact us</h2>
+<p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:jaitutor.app@gmail.com">jaitutor.app@gmail.com</a>.</p>
 
-The following data is stored **locally on your device only**, in the app's private storage:
+<footer class="doc">
+  Jai Tutor · Privacy Policy · last updated October 15, 2026.
+</footer>
 
-- Current learning level (A1–C2)
-- Selected language pair (e.g., Russian → English)
-- List of completed scenario IDs (to avoid repetition)
-- Session history: date, fluency score per session (numeric, no text content)
-- App preferences (TTS speed, etc.)
-
-This data is **never transmitted** anywhere. It is deleted when you uninstall the app.
-
-### 1.3 Crash reports (Firebase Crashlytics)
-
-We use Firebase Crashlytics to receive anonymous crash reports when the app crashes unexpectedly. This helps us fix bugs.
-
-**What Crashlytics collects:**
-- Stack trace of the crash (code location, not user data)
-- Device model and Android version
-- App version
-- A random installation ID (not linked to you personally)
-
-**What Crashlytics does NOT collect:**
-- Your voice or transcribed text
-- Your learning history
-- Any personally identifiable information
-
-Crashlytics is a Google service. Data is processed according to [Google's Privacy Policy](https://policies.google.com/privacy) and [Firebase Data Processing Terms](https://firebase.google.com/terms/data-processing-terms).
-
-### 1.4 Analytics (Firebase Analytics)
-
-We collect anonymous usage events to understand how the app is used:
-
-| Event | Data collected |
-|---|---|
-| `session_start` | Timestamp, language pair, level |
-| `turn_completed` | Match/fallback result (boolean), turn index |
-| `scenario_changed` | New scenario level — no scenario content |
-| `fallback_triggered` | Count only |
-
-**No voice data, no transcribed text, no personal identifiers** are included in any analytics event.
-
-You can opt out of Analytics by enabling "Opt out of Ads Personalization" in your device's Google settings. This also disables Firebase Analytics collection.
-
-### 1.5 Content updates (OTA)
-
-When a new version of the scenario database is available, the app may download it in the background over Wi-Fi. The app will ask for your permission before downloading over mobile data.
-
-**What is transmitted:** The scenario database file (`content_vX.db`). This is static content — it does not contain any of your personal data.
-
----
-
-## 2. Data we do NOT collect
-
-We explicitly do **not** collect:
-
-- ❌ Name, email address, or any account information (no accounts exist)
-- ❌ Voice recordings or audio files
-- ❌ Transcribed text of your speech
-- ❌ Location data
-- ❌ Contacts, photos, or any other device data
-- ❌ Advertising identifiers (we show no ads)
-
----
-
-## 3. Data sharing
-
-We do not sell, rent, or share your personal data with third parties, except:
-
-- **Google** — via Android SpeechRecognizer (if cloud fallback occurs, outside our control) and Firebase services (Crashlytics, Analytics). See Google's Privacy Policy.
-- **Legal requirements** — if required by law (we have no data to share beyond what's described above).
-
----
-
-## 4. Data retention and deletion
-
-| Data type | Location | Retention | How to delete |
-|---|---|---|---|
-| Learning progress | Your device | Until app uninstall | Uninstall app, or use in-app reset in Settings |
-| Crash reports | Firebase servers | 90 days (Firebase default) | Not possible to delete individual reports — they contain no PII |
-| Analytics events | Firebase servers | 14 months (Firebase default) | Opt out via device Google settings |
-
----
-
-## 5. Children's privacy
-
-This app is not directed at children under 13. We do not knowingly collect data from children. If you are a parent and believe your child has used this app, the only data that may exist is anonymous crash/analytics data, which cannot be linked to any individual.
-
----
-
-## 6. GDPR (European Union users)
-
-If you are located in the European Union:
-
-- **Legal basis for processing:** Legitimate interest (crash reporting for app stability) and consent (analytics, which you can opt out of).
-- **Your rights:** You have the right to access, correct, and delete data about you. Given we hold no personally identifiable data, the primary applicable right is to **opt out of analytics** (see Section 1.4).
-- **Data transfers:** Firebase services transfer data to the United States. Google maintains Standard Contractual Clauses for GDPR compliance.
-- **Contact for GDPR requests:** [your-email@example.com]
-
----
-
-## 7. Changes to this policy
-
-We will update this policy when the app's data practices change. The "Last updated" date at the top will reflect any changes. Continued use of the app after an update constitutes acceptance of the revised policy.
-
----
-
-## 8. Contact
-
-Questions about this Privacy Policy:  
-📧 [your-email@example.com] ← заменить перед публикацией
-
----
-
-*This Privacy Policy applies to the Android version of Offline AI Language Tutor (v0.1).*
+</div>
+</body>
+</html>
